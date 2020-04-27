@@ -12,11 +12,16 @@ class TableViewController: UITableViewController {
     
     var itemArray = ["Buy Eggs", "Buy Milk", "Buy Apples"]
     
+    let defaults = UserDefaults.standard
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        if let items = defaults.array(forKey: "ItemListArray") as? [String] {
+        itemArray = items
+        }
     }
-
+    
     //MARK:- TableView Datasource Methods
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -54,6 +59,8 @@ class TableViewController: UITableViewController {
         let action = UIAlertAction(title: "Add", style: .default) { (action) in
             //what will happen once the user clicks the Add Item button on our UIAlert
             self.itemArray.append(textField.text!)
+            self.defaults.set(self.itemArray, forKey: "ItemListArray")
+            self.tableView.reloadData()
         }
         
         alert.addTextField { (alertTextField) in
