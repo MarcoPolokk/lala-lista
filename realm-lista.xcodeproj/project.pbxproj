@@ -105,9 +105,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5FC22F8F2454ACE300389087 /* lala-lista */ = {
+		5FC22F8F2454ACE300389087 /* realm-lista */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5FC22FA42454ACE400389087 /* Build configuration list for PBXNativeTarget "lala-lista" */;
+			buildConfigurationList = 5FC22FA42454ACE400389087 /* Build configuration list for PBXNativeTarget "realm-lista" */;
 			buildPhases = (
 				5FC22F8C2454ACE300389087 /* Sources */,
 				5FC22F8D2454ACE300389087 /* Frameworks */,
@@ -117,7 +117,7 @@
 			);
 			dependencies = (
 			);
-			name = "lala-lista";
+			name = "realm-lista";
 			productName = "lala-lista";
 			productReference = 5FC22F902454ACE300389087 /* realm-lista.app */;
 			productType = "com.apple.product-type.application";
@@ -150,7 +150,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5FC22F8F2454ACE300389087 /* lala-lista */,
+				5FC22F8F2454ACE300389087 /* realm-lista */,
 			);
 		};
 /* End PBXProject section */
@@ -364,7 +364,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5FC22FA42454ACE400389087 /* Build configuration list for PBXNativeTarget "lala-lista" */ = {
+		5FC22FA42454ACE400389087 /* Build configuration list for PBXNativeTarget "realm-lista" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5FC22FA52454ACE400389087 /* Debug */,
